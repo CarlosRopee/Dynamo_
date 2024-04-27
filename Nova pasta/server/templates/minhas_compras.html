@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMO</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            position: relative; /* Adicionando para facilitar o posicionamento absoluto */
+        }
+
+        header {
+            background: linear-gradient(to right, #8B0000 5%, #000 35%);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        header img {
+            max-height: 70px;
+            margin-right: 20px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Alterado para 100% de largura */
+            position: fixed; /* Alteração para position fixed */
+            bottom: 0; /* Posicionando no canto inferior */
+            left: 0;
+            right: 0;
+            z-index: 1; /* Garantindo que fique acima dos demais elementos */
+        }
+
+        .white-rectangle {
+            width: 100%; /* Alterado para preencher toda a largura */
+            height: 100px; /* Altura do retângulo */
+            background-color: white;
+            z-index: 0; /* Garantindo que fique atrás do conteúdo */
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            border-radius: 15px; /* Adicionando bordas redondas */
+        }
+
+        .white-rectangle img {
+            width: 50px; /* Largura da imagem */
+            margin-right: 10px;
+        }
+
+        .rectangle-content {
+            width: calc(100% - 60px); /* Calculando a largura do conteúdo para ajustar a margem */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 0 10px;
+        }
+        
+        .footer-section h3 {
+            color: #8B0000;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Posicionamento absoluto para as escritas destacadas */
+        .highlighted-text {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #8B0000;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <a href="/menu">
+                <div class="header">
+                    <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+                </div>
+            </a>
+        </div>
+        <div class="highlighted-text">Veja os andamentos das suas compras</div>
+    </header>
+
+    <div class="white-rectangle">
+        <img src="imagem/logo.png" alt="logo">
+        <div class="rectangle-content">
+            <p>Texto ou conteúdo aqui...</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Coloque os scripts JavaScript aqui, se necessário
+    </script>
+</body>
+</html>

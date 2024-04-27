@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMO</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Defina a altura mínima do corpo como 100% da altura da viewport */
+            background: #000;
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Adicione esta linha para garantir que os elementos se comportem como coluna */
+            
+        }
+
+        header {
+            background: linear-gradient(to right, #8B0000 5%, #000 35%);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        header img {
+            max-height: 70px;
+            margin-right: 20px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            background-color: #1c1c1c;
+            overflow-x: hidden;
+            transition: 0.7s;
+            padding-top: 40px;
+            z-index: 2;
+        }
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 19px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+        
+        .sidebar a:hover {
+            background-color: #8B0000;
+            color: #111;
+        }
+        
+        .openbtn {
+            font-size: 34px;
+            cursor: pointer;
+            background-color: transparent ;
+            color: #fff;
+            border: none;
+            margin-left: 0px;
+            margin-right: 20px;
+            width: 50px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .closebtn {
+            padding: 8px 0 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            display: block;
+            background: none; 
+            border: none; 
+        }
+
+        
+
+        header p {
+            margin-top; 6px;
+            font-size: 21px;
+            color: #fff;
+            text-align: left;
+            font-size: 20px;
+            
+        }
+
+        .header-text {
+            color: #fff;
+            margin-right: 10; /* Move o texto para a direita */
+        }
+
+        .header-text a {
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        
+
+        main {
+            text-align: center;
+            color: #fff;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 97%;
+            margin-top: 169px;
+            
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 75%);
+            transition: background 10s;
+            z-index: 1;
+        }
+
+        .user-info-container {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(140, 0, 0, 10);
+            margin: 20px auto;
+            max-width: 900px;
+            text-align: center;
+            display: flex;  /* Adicione essa linha para tornar os elementos filhos flexíveis */
+            flex-direction: column; /* Adicione essa linha para alinhar os elementos verticalmente */
+            align-items: center; 
+            height: 50vh;
+        }
+
+        .info-box {
+            margin: 15px; /* Adicionei uma margem para espaçamento entre as info-box */
+            width: 400px; /* Defina uma largura fixa ou ajuste conforme necessário */
+            box-sizing: border-box;
+            align-items: left;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000;
+            width: 100%;
+        }
+        
+        .info-value {
+            background-color: 	#eee;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #000;
+            width: 100%;
+        }
+
+        main h1 {
+            font-weight: normal;    
+        }
+
+        main {
+            margin-top: 100px;
+            margin-bottom: 0px;
+        }
+
+        .user-info-container p{
+            color: #000;
+            text-align: center;
+        }
+
+        .editable-field {
+            cursor: pointer;
+            border-bottom: 1px dashed transparent;
+            display: inline-block;
+        }
+        
+        .editable-field:hover {
+            border-color: #ccc;
+        }
+        
+        .edit-mode {
+            border-color: transparent;
+            display: inline-block; /* Adicione esta linha para garantir que o elemento seja exibido durante o modo de edição */
+        }
+
+        .editable-field[contenteditable="true"] {
+            border: 1px dashed #ccc;
+        }
+        
+        .editable-field[contenteditable="false"] {
+            border: none;
+        }
+
+        .edit-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .edit-buttons button {
+            text-decoration: none;
+            color: #fafafa;
+            background-color: #8B0000;
+            padding: 13px 20px;
+            border: 2px solid #8B0000; /* Adiciona uma borda com a cor original */
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+            font-size: 16px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        
+        .edit-buttons button:hover {
+            background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
+            color: #8B0000; /* Nova cor do texto ao passar o mouse */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <div  style="display: flex; align-items: left;">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="/menu">
+                <div class="header">
+                    <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+                </div>
+            </a>
+            
+            {% if user.is_authenticated %}
+                <p style="margin-left: 10px;">Olá  {{ user.username }}! Acompanhe seus dados cadastrais.</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a id="menu-link" href="{% url 'menu' %}">Home</a>
+        <a id="meus-dados-link" href="{% url 'meus_dados' %}">Meus Dados</a>        
+        <a id="enderecos-cadastrados-link" href="{% url 'enderecos_cadastrados' %}">Endereços Cadastrados</a>
+        
+    </div>
+
+    <main>
+        <h1>Meus Dados</h1>
+        
+        <div class="user-info-container">
+            <div class="info-box">
+                <label>Nome:</label>
+                <div class="info-value editable-field" id="nomeInfoBox">
+                    <span>{{ user.username }}</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <label>Email:</label>
+                <div class="info-value editable-field" id="emailInfoBox">
+                    <span>{{ user.email }}</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <label>Telefone:</label>
+                <div class="info-value editable-field" id="telefoneInfoBox" maxlength="14">
+                    <span>{{ user_profile.telefone|default:"N/A" }}</span>
+                </div>
+            </div>
+            <!-- Adicione mais campos conforme necessário -->
+        </div>
+
+        <div class="edit-buttons">
+            <button id="editarBtn" onclick="enableEdit()">Editar</button>
+            <button class="saveBtn" onclick="saveChanges()">Salvar</button>
+        </div>
+    </main>
+    
+
+    <main id="main"></main>
+    
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <!-- Adicione links para suas redes sociais -->
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function enableEdit() {
+            // Habilita o modo de edição para cada campo
+            document.querySelectorAll('.editable-field').forEach(function (editableField) {
+                editableField.contentEditable = true;
+
+                telefoneInfoBox.addEventListener('input', formatTelefoneInput);
+            });
+        }
+        
+        function disableEdit() {
+            // Desabilita o modo de edição para cada campo
+            document.querySelectorAll('.editable-field').forEach(function (editableField) {
+                editableField.contentEditable = false;
+                editableField.classList.remove('edit-mode'); // Remove a classe 'edit-mode'
+            });
+        }
+
+        function formatTelefoneInput() {
+            // Obtém o campo de telefone e remove caracteres não numéricos
+            const telefoneInfoBox = document.getElementById('telefoneInfoBox');
+            let telefone = telefoneInfoBox.textContent.replace(/\D/g, '');
+    
+            // Formata o número com traços
+            if (telefone.length <= 10) {
+                telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3');
+            } else {
+                telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+            }
+    
+            // Atualiza o conteúdo do campo de telefone
+            telefoneInfoBox.textContent = telefone;
+        }
+
+        async function saveChanges() {
+            // Coleta as informações editadas
+            const nome = document.getElementById('nomeInfoBox').textContent;
+            const email = document.getElementById('emailInfoBox').textContent;
+            const telefoneInfoBox = document.getElementById('telefoneInfoBox');
+            const telefone = telefoneInfoBox.textContent.replace(/\D/g, ''); 
+            
+            if (telefone.length < 10 || telefone.length > 11) {
+                alert('Por favor, insira um número de telefone válido.');
+                return;
+            }
+    
+            // Obtém o token CSRF do cookie
+            const csrftoken = getCookie('csrftoken');
+    
+            // Cria um objeto com as informações relevantes
+            const updatedData = {
+                nome: nome,
+                email: email,
+                telefone: telefone,
+            };
+    
+            try {
+                // Envia os dados para o back-end
+                const response = await fetch('/seu-novo-endpoint/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': csrftoken,  // Inclui o token CSRF no cabeçalho
+                    },
+                    body: JSON.stringify(updatedData),
+                });
+    
+                if (response.ok) {
+                    // Atualização bem-sucedida, desativa o modo de edição
+                    console.log('Informações de nome, email e telefone atualizadas com sucesso!');
+                    disableEdit();
+                } else {
+                    // Lidere com erros de resposta do servidor
+                    console.error('Falha ao atualizar informações de nome, email e telefone');
+                }
+            } catch (error) {
+                // Lidere com erros de rede ou outros erros
+                console.error('Erro ao enviar solicitação:', error);
+            }
+    
+            // Remove o evento de input para parar de formatar enquanto não estiver em modo de edição
+            telefoneInfoBox.removeEventListener('input', formatTelefoneInput);
+        }
+        
+        // Função para obter um cookie pelo nome
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").style.marginLeft = "300px";
+            document.getElementById("overlay").style.display = "block";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-300px";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("overlay").style.display = "none";
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("DOM carregado. Tentando encontrar elementos...");
+        
+            var mySidebar = document.getElementById("mySidebar");
+            var main = document.getElementById("main");
+            var overlay = document.getElementById("overlay");
+        
+            console.log("mySidebar:", mySidebar);
+            console.log("main:", main);
+            console.log("overlay:", overlay);
+        
+            var itemBoxes = document.querySelectorAll('.item-box');
+        
+            itemBoxes.forEach(function (box) {
+                box.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.1)';
+                });
+        
+                box.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1.0)';
+                });
+        
+                box.addEventListener('click', function () {
+                    // O próprio link na tag <a> redirecionará para a tela do item correspondente
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

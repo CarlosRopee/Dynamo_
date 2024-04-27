@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 3</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; /* Distribui o espaço entre os itens (cabeçalho, conteúdo, rodapé) */
+            min-height: 100vh; 
+        }
+
+        .divider {
+            width: 70%;
+            height: 5px;
+            background-color: #5D3587;
+            margin-top: 0;
+        }
+
+        .header {
+            background-color: transparent;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .header img {
+            max-width: 120px;
+            height: auto;
+            background: transparent;
+        }
+
+        .item-container {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(140, 0, 128, 10);
+            flex: 1;
+            max-width: 1500px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        .item-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .item-images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mainImage {
+            max-width: 80%;
+            height: auto;
+            margin-right: 0.5px;
+        }
+
+        .item-image img {
+            max-width: 70px;
+            height: 100%;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .buy-button {
+            text-decoration: none;
+            color: #fafafa;
+            background-color: #5D3587;
+            padding: 13px 20px;
+            border: 2px solid #5D3587; /* Adiciona uma borda com a cor original */
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+        }
+        
+        .buy-button:hover {
+            background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
+            color: #5D3587; /* Nova cor do texto ao passar o mouse */
+        }
+
+        /* Adicionando o novo container */
+        .additional-details-container {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(140, 0, 128, 10);
+            margin: 20px auto; /* Espaçamento entre os containers */
+            width: 100%; /* Largura máxima do contêiner */
+            max-width: 1080px; /* Largura máxima do contêiner */
+            margin-bottom: 100px;
+        }
+        .additional-details-container p {
+            margin-left: 15px;
+        }
+        
+        .additional-details-container h3 {
+            margin-left: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Novo estilo para o rodapé */
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 97%;
+            margin-top: 100px auto;
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        .dividers {
+            width: 100%;
+            text-align: center; /* Centraliza a imagem horizontalmente */
+            margin-top: 50px; /* Ajuste conforme necessário */
+            margin-bottom: 50px;
+            
+        }
+
+        .dividers img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="/menu">
+        <div class="header">
+            <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+        </div>
+    </a>
+
+    <div class="divider"></div>
+
+    <div class="item-container">
+        <div class="item-details">
+            <h2>Computador Gamer Balam, AMD Ryzen 5 4600G, 16GB DDR4, SSD 240GB</h2>
+            <p>Por:</P>
+            <h1> R$ 1.615,99</h1>
+            <a href="https://buy.stripe.com/test_cN22b524IdwB9EYfZ5" class="buy-button">Comprar</a>
+        </div>
+       
+
+        
+        <div class="item-images-container">
+            <img id="mainImage" src="{% static 'imagem/pc item3.png' %}" alt="Descrição da Imagem">
+        </div>
+        
+        <div class="item-image">
+            <img src="{% static 'imagem/pc item3.png' %}" alt="Descrição da Imagem" onclick="changeImage('{% static 'imagem/pc item3.png' %}')">
+        </div>
+        
+        <div class="item-image">
+            <img src="{% static 'imagem/miniatura item3.png' %}" alt="Descrição da Imagem" onclick="changeImage('{% static 'imagem/miniatura item3.png' %}')">
+        </div>
+        
+        <div class="item-image">
+            <img src="{% static 'imagem/cabecaPC item3.png' %}" alt="Descrição da Imagem" onclick="changeImage('{% static 'imagem/cabecaPC item3.png' %}')">
+        </div>
+    </div>
+
+    <div class="dividers">
+        <img src="{% static 'imagem/aqui.png' %}" alt="Divisão" style="width: 100%; height: auto;">
+    </div>
+
+    <!-- Novo container para detalhes adicionais -->
+    <div class="additional-details-container">
+        <h3>Detalhes Adicionais do PC</h3>
+        <p>1 x Processador AMD Ryzen 5 4600G, 6-Core, 12-Threads, 3.7GHz (4.2GHz Turbo), Cache 11MB, AM4, 100-100000147BOX</p>
+        <p>1 x Placa Mae Pichau Alphard A520M-S, DDR4, M-ATX, Socket AM4, Chipset AMD A520, PCH-ALPDA520M-S </p>
+        <p>2 x Memoria Mancer Dantalion Z, 8GB (1x8GB), DDR4, 3200MHz, C16, MCR-DTLZ-8GB</p>
+        <p>1 x SSD Mancer Reaper RF, 240GB, Sata III 6GB/s, Leitura 500 MB/s, Gravacao 450 MB/s, MCR-RPRF-240</p>
+        <p>1 x Fonte Mancer Thunder 400W, 80 Plus Bronze, MCR-THR400-BL01-OEM</p>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <!-- Adicione links para suas redes sociais -->
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(newImage) {
+            document.getElementById('mainImage').src = newImage;
+        }
+    </script>
+    
+</body>
+</html>

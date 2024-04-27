@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereços de Entrega</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Defina a altura mínima do corpo como 100% da altura da viewport */
+            background: #000;
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Adicione esta linha para garantir que os elementos se comportem como coluna */
+            
+        }
+
+        
+        
+
+        header {
+            background: linear-gradient(to right, #8B0000 5%, #000 35%);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        header img {
+            max-height: 70px;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            background-color: #1c1c1c;
+            overflow-x: hidden;
+            transition: 0.7s;
+            padding-top: 40px;
+            z-index: 2;
+        }
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 19px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+        
+        .sidebar a:hover {
+            background-color: #8B0000;
+            color: #111;
+        }
+        
+        .openbtn {
+            font-size: 34px;
+            cursor: pointer;
+            background-color: transparent ;
+            color: #fff;
+            border: none;
+            margin-left: 0px;
+            margin-right: 20px;
+            width: 50px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar .closebtn {
+            padding: 8px 0 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            display: block;
+            background: none; 
+            border: none; 
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 30px;
+            flex-grow: 1; /* Adicione esta linha para que a main-container ocupe o restante da altura disponível */
+            align-items: center;
+            margin-top: 50px; /* Ajuste conforme necessário */
+            margin-left: 315px;
+        }
+
+        .addresses-container {
+            text-align: left;
+            margin-right: 60px;
+            width: 100%;
+            margin-left : 10px;
+            margin-top: 50px;
+            margin-right: 20px;
+            
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(140, 0, 0, 10);
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 8px;
+            width: calc(48% - 10px);
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #8B0000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 100px;
+    
+        }
+
+        buttom: hover {
+            background-color: #B22222;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 0;
+        }
+
+        .address-box {
+            background: #8B0000;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            display: flex; /* Adicionado para alinhar os botões lado a lado */
+            align-items: center; /* Adicionado para alinhar os botões verticalmente ao centro */
+            justify-content: space-between; /* Adicionado para espaço igual entre os botões */
+        }
+
+        .address-box button {
+            background-color: #ff6347;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .add-button {
+            padding: 8px;
+            background-color: #8B0000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 300px;
+            height: 100%;
+            margin: 25px;
+            margin-right: 25px;
+            display: flex;
+            align-items: center; /* Centralizar verticalmente o conteúdo */
+            justify-content: center; 
+            
+        }
+
+        .add-button:hover {
+            background-color: #B22222;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+
+        .add-address-container {
+            width: 500px; /* Ajuste a largura conforme necessário */
+            height: 550px;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(140, 0, 0, 10);
+            z-index: 2;
+        }
+
+        .add-address-container button {
+            width: 100%; /* Faça o botão ocupar 100% da largura da caixa */
+            margin-top: 20px; /* Adicione margem acima do botão para espaçamento */
+            /* ... outras propriedades ... */
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            width: 15px;
+        }
+
+        .step-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        .step {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .address-info {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 8px;
+            
+        }
+
+        .address-box {
+            background: #eee;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Adicionado para alinhar os botões lado a lado */
+            flex-direction: column; /* Adicionado para organizar os elementos em coluna */
+            align-items: center;
+            
+        }
+
+        .address-box .recipient {
+            margin-top: 10px;
+            
+        }
+
+        .address-box .full-address {
+            margin-top: 10px;
+        }
+
+        .address-box button {
+            background-color: #8A2BE2;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 97%;
+            margin-top: 20px;
+            
+        }
+
+        h2 {
+            align: center;
+            color: #000;
+            margin-left: 130px;
+            
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #F8F8FF;
+            font-weight: normal;
+        }
+
+        form input {
+            width: 100%;
+            margin-bottom: 15px; /* Adicione espaçamento inferior entre os inputs */
+        }
+
+        header p {
+            text-align: left;
+            font-size: 20px;
+            
+        }
+
+        .edit-button {
+            background-color: #8A2BE2; /* Cor verde para o botão de editar */
+            color: white;
+        }
+        
+        .delete-button {
+            background-color: #8A2BE2; /* Cor vermelha para o botão de excluir */
+            color: white;
+        }
+
+        
+        .header p {
+                margin: 40;
+                font-size: 20px;
+                
+                color: #fff;
+                
+        } 
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 75%); /* Começa com 0% de opacidade */
+            transition: background 10s;
+            z-index: 1;
+        }
+            
+               
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        
+        
+        
+        <div  style="display: flex; align-items: left;">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="/menu">
+                <div class="header">
+                    <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+                </div>
+            </a>
+            
+            {% if user.is_authenticated %}
+                <p style="margin-left: 10px;">Olá  {{ user.username }}! Acompanhe seus endereços aqui.</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a id="menu-link" href="{% url 'menu' %}">Home</a>
+        <a id="meus-dados-link" href="{% url 'meus_dados' %}">Meus Dados</a>        
+        <a id="enderecos-cadastrados-link" href="{% url 'enderecos_cadastrados' %}">Endereços Cadastrados</a>
+        
+    </div>
+
+    <div id="main"></div>
+    <div class="main-container">
+        <div class="addresses-container">
+            <h1>Endereços de Entrega</h1>
+            <div class="container" id="addressList">
+                <!-- Endereços cadastrados serão exibidos aqui -->
+            </div>
+        </div>
+
+        <div  class="add-button" onclick="openAddAddressBox()">Adicionar Novo Endereço</div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeAddAddressBox()"></div>
+    <div class="add-address-container" id="addAddressContainer">
+        <span class="close-btn" onclick="closeAddAddressBox()">X</span>
+        <h2>Cadastrar Endereço</h2>
+        <div class="step-container">
+            <div class="step active" id="stepCep">
+                <form>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" oninput="formatCep()" required>
+                    <button type="button" onclick="fetchAddress()">Verificar CEP</button>
+                </form>
+            </div>
+
+            <div class="step" id="stepDetails">
+                <div class="address-info" id="addressInfo"></div>
+                <form id="addressForm">
+                    <!-- Seus campos de formulário aqui -->
+                    <label for="recipient">Destinatário:</label>
+                    <input type="text" id="recipient" name="recipient" required> <!-- Adicionado 'required' -->
+
+                    <label for="number">Número:</label>
+                    <input type="text" id="number" name="number" required>
+
+                    <label for="complement">Complemento:</label>
+                    <input type="text" id="complement" name="complement">
+
+                    <button type="button" onclick="submitForm()">Cadastrar Endereço</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <!-- Adicione links para suas redes sociais -->
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").style.marginLeft = "300px";
+            document.getElementById("overlay").style.display = "block";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-300px";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("overlay").style.display = "none";
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+    
+            // Carregar endereços do localStorage ao iniciar a página
+            const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+            const addressList = document.getElementById('addressList');
+    
+            storedAddresses.forEach(address => {
+                const newAddressBox = createAddressBox(address);
+                addressList.appendChild(newAddressBox);
+            });
+
+            var itemBoxes = document.querySelectorAll('.item-box');
+
+            itemBoxes.forEach(function (box) {2
+                box.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.1)';
+                });
+    
+                box.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1.0)';
+                });
+    
+                box.addEventListener('click', function () {
+                    // O próprio link na tag <a> redirecionará para a tela do item correspondente
+                });
+            });
+
+            
+        });
+
+        
+
+        function loadAddresses() {
+            const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+            const addressList = document.getElementById('addressList');
+
+            // Limpar a lista antes de adicionar os endereços
+            addressList.innerHTML = '';
+
+            storedAddresses.forEach(address => {
+                const newAddressBox = createAddressBox(address);
+                addressList.appendChild(newAddressBox);
+            });
+        }
+
+        function createAddressBox(addressText) {
+            const addressBox = document.createElement('div');
+            addressBox.classList.add('address-box');
+        
+            const [cep, recipient, number, complement] = addressText.split(' - ');
+        
+            // Criar elemento para exibir a localização
+            const locationElement = document.createElement('p');
+            locationElement.classList.add('full-address');
+            addressBox.appendChild(locationElement);
+        
+            // Fazer a requisição à API ViaCEP para obter informações de localização
+            fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro ao obter informações de localização.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Preencher o elemento de localização com as informações do endereço
+                    locationElement.textContent = `${data.logradouro || ''}, ${data.bairro || ''}, ${data.localidade || ''} - ${data.uf || ''}`;
+                })
+                .catch(error => {
+                    console.error('Erro ao consultar informações de localização:', error);
+                    locationElement.textContent = 'Localização não disponível';
+                });
+        
+            // Criar elemento para exibir destinatário
+            const recipientElement = document.createElement('p');
+            recipientElement.classList.add('recipient');
+            recipientElement.textContent = `Destinatário: ${recipient}`;
+            addressBox.appendChild(recipientElement);
+        
+            // Criar container para os botões
+            const buttonsContainer = document.createElement('div');
+            buttonsContainer.style.display = 'flex';
+        
+            // Criar botão de edição
+            
+            
+        
+            // Criar botão de exclusão
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Excluir';
+            deleteButton.onclick = function () {
+                removeAddress(addressText);
+            };
+            buttonsContainer.appendChild(deleteButton);
+            deleteButton.classList.add('delete-button'); // Adiciona uma classe ao botão de exclusão
+        
+            // Adicionar o container de botões ao endereço
+            addressBox.appendChild(buttonsContainer);
+        
+            return addressBox;
+        }
+
+        function openAddAddressBox() {
+            // Verificar o limite de 3 endereços antes de exibir a caixa de adição de endereço
+            const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+            if (storedAddresses.length >= 3) {
+                alert('Você atingiu o limite de 3 endereços cadastrados.');
+                return;
+            }
+
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('addAddressContainer').style.display = 'block';
+            showStep('stepCep');
+        }
+
+        function closeAddAddressBox() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('addAddressContainer').style.display = 'none';
+        }
+
+        function showStep(stepId) {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => step.classList.remove('active'));
+
+            const currentStep = document.getElementById(stepId);
+            if (currentStep) {
+                currentStep.classList.add('active');
+            }
+        }
+
+        function fetchAddress() {
+            const cep = document.getElementById('cep').value;
+    
+            // Validar se o CEP foi preenchido
+            if (!cep) {
+                alert("Por favor, informe o CEP.");
+                return;
+            }
+    
+            // Formatando o CEP
+            const formattedCep = cep.replace(/[^0-9]/g, '');
+            if (formattedCep.length !== 8) {
+                alert("Formato de CEP inválido.");
+                return;
+            }
+    
+            // Formatando e exibindo o CEP no campo
+            document.getElementById('cep').value = `${formattedCep.slice(0, 5)}-${formattedCep.slice(5)}`;
+    
+            // Fazer a requisição à API ViaCEP
+            fetch(`https://viacep.com.br/ws/${formattedCep}/json/`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('CEP não encontrado. Por favor, informe um CEP válido.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Preencher os campos com as informações do endereço
+                    const addressInfo = document.getElementById('addressInfo');
+                    addressInfo.innerHTML = `<strong>Endereço Encontrado:</strong><br>
+                                            ${data.logradouro || ''}, ${data.bairro || ''}, ${data.localidade || ''} - ${data.uf || ''}`;
+    
+                    // Exibir a etapa de detalhes
+                    showStep('stepDetails');
+                })
+                .catch(error => {
+                    console.error('Erro ao consultar o CEP:', error);
+                    alert(error.message);
+                });
+        }
+
+        function formatCep() {
+            const cepInput = document.getElementById('cep');
+            cepInput.value = cepInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+            if (cepInput.value.length > 5) {
+                cepInput.value = cepInput.value.replace(/^(\d{5})(\d)/, '$1-$2'); // Adiciona o traço
+            }
+        }
+
+        function submitForm() {
+            // Verificar o limite de 3 endereços antes de adicionar um novo endereço
+            const recipientInput = document.getElementById('recipient');
+            const numberInput = document.getElementById('number');
+    
+            if (!recipientInput.value || !numberInput.value) {
+                alert('Por favor, preencha os campos de destinatário e o de número.');
+                return;
+            }
+            
+            const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+            if (storedAddresses.length >= 3) {
+                alert('Você atingiu o limite de 3 endereços cadastrados.');
+                return;
+            }
+
+            const addressText = `${document.getElementById('cep').value} - ${document.getElementById('recipient').value}, ${document.getElementById('number').value}, ${document.getElementById('complement').value}`;
+
+            // Adicionar endereço à lista na página
+            const addressList = document.getElementById('addressList');
+            const newAddressBox = createAddressBox(addressText);
+            addressList.appendChild(newAddressBox);
+
+            // Adicionar endereço à localStorage para persistência
+            storedAddresses.push(addressText);
+            localStorage.setItem('addresses', JSON.stringify(storedAddresses));
+
+            // Fechar a caixa de adição de endereço
+            closeAddAddressBox();
+        }
+
+        function removeAddress(addressText) {
+            // Exibir uma mensagem de confirmação
+            const userConfirmation = confirm('Tem certeza que quer excluir este endereço?');
+        
+            if (!userConfirmation) {
+                // Se o usuário clicar em "Cancelar" na mensagem de confirmação, abortar a exclusão
+                return;
+            }
+        
+            // Remover endereço da lista na página
+            const addressList = document.getElementById('addressList');
+            const addressBoxToRemove = Array.from(addressList.children).find(box => box.textContent.includes(addressText));
+        
+            // Remover endereço da localStorage
+            const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+            const updatedAddresses = storedAddresses.filter(address => address !== addressText);
+            localStorage.setItem('addresses', JSON.stringify(updatedAddresses));
+
+            // Recarregar a lista de endereços após a remoção
+            loadAddresses();
+        }
+
+        function editAddress(addressText) {
+        }
+
+        
+        
+    </script>
+</body>
+</html>

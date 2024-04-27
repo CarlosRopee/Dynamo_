@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMO</title>
+    <link rel="icon" href="logo_sb.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #000;
+            color: #000; /* Cor do texto no body */
+            
+            
+            
+        }
+
+        
+
+        header {
+            background: #000;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to top, #8B0000 0%, #000 10%);
+            overflow: hidden;
+            margin-top: -20px;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Para permitir cliques nos elementos abaixo da div de estrelas */
+            z-index: 0;
+        }
+        
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 22px;
+            
+            color: #fff;
+        }
+
+        .header-text {
+            color: #fff;
+            margin-right: 10px; 
+            
+        }
+
+        .header-text a {
+            color: #B22222;
+            text-decoration: underline;
+            cursor: pointer;
+            margin: 0 10px;
+            
+        }
+
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+
+        .item-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        
+        .item-container_v2 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .item-box {
+            
+            width: 200px;
+            box-shadow: 0 0 10px rgba(139, 0, 0, 10);
+            margin: 10px;
+            padding: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .item-box p {
+            color: #32CD32;
+            font-size: 20px;
+
+        }
+
+        .item-box img {
+            max-width: 100%;
+            max-height: 150px;
+            width: auto;
+            height: auto;
+        }
+
+        .item-box:hover {
+            transform: scale(1.05);
+        }
+
+        .novo_container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        
+        .novo_container .item-box {
+            width: 200px;
+            box-shadow: 0 0 10px rgba(139, 0, 0, 10);
+            margin: 10px;
+            padding: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        
+        
+        
+        .novo_container .item-box:hover {
+            transform: scale(1.05);
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 75%); /* Começa com 0% de opacidade */
+            transition: background 10s;
+            z-index: 1;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            background-color: #1c1c1c; /* Altere para a cor desejada, por exemplo, #000 */
+            overflow-x: hidden;
+            transition: 0.7s;
+            padding-top: 60px;
+            z-index: 2;
+        }
+        
+
+
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 19px;
+            color: #fff; /* Altere para a cor desejada, por exemplo, #fff */
+            display: block;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .sidebar a:hover {
+            background-color: #8B0000; /* Cor de fundo mais escura ao passar o mouse */
+            color: #000; /* Cor do texto mais clara ao passar o mouse */
+        }
+
+        .openbtn {
+            font-size: 35px;
+            cursor: pointer;
+            background-color: transparent; /* Remova o fundo branco */
+            color: #fff; /* Cor branca para as três listras */
+            border: none;
+        }
+
+        
+
+        .sidebar .closebtn {
+            /* Estilos específicos para o botão de fechar (x) */
+            padding: 8px 0 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            display: block;
+            background: none; 
+            border: none; 
+        }
+
+        
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            margin-left: 0;
+        }
+        
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 97%;
+            margin-top: 100px auto;
+            height: 20vh;
+        }
+        
+        h3 {
+            font-weight: normal;
+            
+        }
+
+        h2 {
+            color: #fff;
+            margin-left: 45px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-weight: normal;
+            font-size: 28px;
+
+        }
+
+        .divider {
+            width: 100%;
+            text-align: center; /* Centraliza a imagem horizontalmente */
+            margin-top: 70px; /* Ajuste conforme necessário */
+            
+        }
+
+        .divider img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+        }
+
+        .item-box p.original-price,
+        .item-box p.discount-price {
+            text-align: left; /* Alinha os preços à esquerda */
+            margin-left: 5px; /* Adiciona margem à esquerda */
+            
+        }
+
+        .item-box p.original-price {
+            color: #B22222; /* Cor vermelha para o preço original */
+            font-size: 14px;
+            
+        }
+
+        .item-box p.discount-price {
+            color: #32CD32; /* Cor verde para o preço promocional */
+        }
+        
+        .item-box p.original-price span {
+            text-decoration: line-through; /* Efeito de corte no preço original */
+        }
+
+        .item-box h3 {
+            text-align: left; /* Alinha o texto à esquerda */
+            margin: 15px 0; 
+            margin-left: 5px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <div class="stars"></div>
+    
+    <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+        {% csrf_token %}
+    </form>
+    
+    <header>
+        <div class="header-content">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+            <div class="header-text">
+                {% if user.is_authenticated %}
+                    <p>Bem-vindo,  {{ user.username }} <a href="{% url 'logout' %}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">SAIR</a></p>
+                {% else %}
+                    <p>Bem-vindo, faça seu <a href="{% url 'login' %}">LOGIN</a> ou <a href="{% url 'cadastro' %}">CADASTRE-SE</a></p>
+                {% endif %}
+            </div>
+            
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a id="menu-link" href="{% url 'menu' %}">Home</a>
+        <a id="meus-dados-link" href="{% url 'meus_dados' %}">Meus Dados</a>        
+        <a id="enderecos-cadastrados-link" href="{% url 'enderecos_cadastrados' %}">Endereços Cadastrados</a>
+        
+    </div>
+    
+
+    <h2>COMPUTADORES</h2>
+    <div class="item-container">
+        <div class="item-box" onclick="window.location.href='{% url 'item1' %}'">
+            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/g/a/gabinete-kazan2-preto-intel-m_dio-jpg002_10.jpg" alt="Item 1">
+            <h3>Computador Gamer, Intel i5-13400, 16GB DDR4, SSD 480GB</h3>
+            <p class="original-price">De: <span>R$ 5.999,99</span></p>
+            <p class="discount-price">Por: R$ 5.169,52</p>
+        </div>
+
+        <div class="item-box" onclick="window.location.href='{% url 'item2' %}'">
+            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/o/pouter-3-branco-medio-001_2_1_1.jpg" alt="Item 2">
+            <h3>Computador Gamer Anúbis II, AMD Ryzen 9 5950X, 16GB DDR4, SSD M.2 480GB</h3>
+            <p class="original-price">De: <span>R$ 10.999,99</span></p>
+            <p class="discount-price">Por: R$ 9.765,28</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'item3' %}'">
+            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/g/tgt-flare-amd-sem-gpu-pichau-001_1_1.jpg" alt="Item 3">
+            <h3>Computador Gamer Balam, AMD Ryzen 5 4600G, 16GB DDR4, SSD 240GB</h3>
+            <p class="original-price">De: <span>R$ 1.899,99</span></p>
+            <p class="discount-price">Por: R$ 1.615,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'item4' %}'">
+            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/o/cooling-x-cooler-master-pichau-006.png" alt="Item 4">
+            <h3>Cooler Master Cooling X, AMD Ryzen 9 7950X3D, GeForce RTX 4080 16GB, 64GB DDR5, SSD M.2 4TB, Liquid Cooler</h3>
+            <p class="discount-price">R$ 67.999,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'item5' %}'">
+            <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/c/cc560-white-led-azul-gabinete-001_1.jpg" alt="Item 5">
+            <h3>Computador Gamer Deepcool, AMD Ryzen 5 5600X, 16GB DDR4, SSD M.2 480GB</h3>
+            <p class="original-price">De: <span>R$ 5.499,99</span></p>
+            <p class="discount-price">Por: R$ 5.081,00</p>
+        </div>
+    </div>  
+    
+
+    <div class="divider">
+        <img src="{% static 'imagem/dynamo.png' %}" alt="Divisão" style="width: 100%; height: auto;">
+    </div>  
+    
+    
+    <h2>PERIFÉRICOS</h2>
+    <div class="novo_container">
+        <div class="item-box" onclick="window.location.href='{% url 'novo1' %}'">
+            <img src="https://images.kabum.com.br/produtos/fotos/129688/teclado-mecanico-gamer-redragon-kumara-rgb-switch-outemu-blue-abnt2-branco-k552w-rgb-pt-blue-_1661259345_gg.jpg" alt="novo1">
+            <h3>Teclado Mecânico Redragon Kumara Lunar White RGB Switch Brown, K552w-RGB PT-Brown</h3>
+            <p class="discount-price"> R$ 158,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'novo2' %}'">
+            <img src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/refreshed-g203/g203-black-gallery-1.png?v=1" alt="novo2">
+            <h3>Mouse Gamer Logitech G203 LIGHTSYNC RGB, Efeito de Ondas de Cores, 6 Botões Programáveis e Até 8.000 DPI, PRETO</h3>
+            <p class="discount-price">R$ 158,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'novo3' %}'">
+            <img src="https://images.kabum.com.br/produtos/fotos/149990/mouse-sem-fio-gamer-logitech-g-pro-x-superlight-lightspeed-5-botoes-25000-dpi-branco-910-005941_1614261697_gg.jpg" alt="novo3">
+            <h3>Mouse Sem Fio Gamer Logitech G PRO X Superlight, Lightspeed, 25000 DPI, 5 Botões, Branco</h3>
+            <p class="original-price">De: <span>R$ 899,99</span></p>
+            <p class="discount-price">Por: R$ 799,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'novo4' %}'">
+            <img src="https://m.media-amazon.com/images/I/61tZYCa32KL._AC_UL320_.jpg" alt="novo4">
+            <h3>Machenike K500-B61 Mini Teclado Mecânico Formato 60% com Fio, Teclas Removíveis, Retroiluminação RGB</h3>
+            <p class="original-price">De: <span>R$ 215,99</span></p>
+            <p class="discount-price">Por: R$ 205,99</p>
+        </div>
+        
+        <div class="item-box" onclick="window.location.href='{% url 'novo5' %}'">
+            <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/154304/Mouse-Gamer-Razer-Deathadder-Essential-6400-DPI-com-fio_1699512491_gg.jpg" alt="novo5">
+            <h3>Mouse Gamer Razer Deathadder Essential 6400 DPI com fio</h3>
+            <p class="original-price">De: <span>R$ 349,99</span></p>
+            <p class="discount-price">Por: R$ 299,99</p>
+        </div>        
+    </div>
+
+    
+
+    
+    <div id="main"></div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <!-- Adicione links para suas redes sociais -->
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").style.marginLeft = "300px";
+            document.getElementById("overlay").style.display = "block"; // Exibe o overlay
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-300px";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("overlay").style.display = "none"; // Oculta o overlay
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var itemBoxes = document.querySelectorAll('.item-box');
+
+            itemBoxes.forEach(function (box) {
+                box.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.1)';
+                });
+
+                box.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1.0)';
+                });
+
+                box.addEventListener('click', function () {
+                    // O próprio link na tag <a> redirecionará para a tela do item correspondente
+                });
+            });
+
+            var starsContainer = document.querySelector('.stars');
+
+            for (var i = 0; i < 100; i++) {
+                var star = document.createElement('div');
+                star.className = 'star';
+                starsContainer.appendChild(star);
+            }
+        });
+
+        
+    </script>
+</body>
+</html>
