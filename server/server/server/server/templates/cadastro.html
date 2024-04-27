@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO - DYNAMO</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: linear-gradient(to left, #000 85%, #800000 );
+        }
+
+        
+
+        body, html {
+            height: 100%;
+        }
+
+        .background-container {
+            background-color: /* Sua cor de fundo desejada para o fundo da tela */;
+            padding: 50px; /* Ajuste conforme necessário */
+            height: 100%;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .signin-image {
+            flex: 1;
+            padding: 20px;
+            max-width: 50%; /* Adicionado para limitar a largura da imagem */
+        }
+    
+        .signin {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%; /* Alterado para ocupar 100% da largura do contêiner .content */
+            max-width: 500px; /* Adicionado para limitar a largura da box de cadastro */
+            margin-right: 20px;
+        }
+
+        .signin h2 {
+            color: #000;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .signin-form {
+            width: 100%;
+        }
+
+        
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputBox {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: 0;
+        }
+
+        i {
+            display: block;
+            font-style: italic;
+            margin-top: 5px;
+            color: #777;
+        }
+
+        .links {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: #800000;
+            text-decoration: none;
+            margin-right: 20px;
+            margin-bottom: 30px; /* Adicionado para criar um espaço de uma linha */
+        }
+
+        button {
+            background-color: #800000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10 auto; /* Adicionado para centralizar o botão */
+        }
+
+        button:hover {
+            background-color: #B22222;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="signin-image">
+            <a href="{% url 'menu' %}">
+                <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+            </a>
+
+        </div>
+        <div class="signin">
+            <h2>CADASTRO</h2>
+            <form method="post" class="signin-form">
+                {% csrf_token %}
+                {% if form.errors %}{{ form.errors }}{% endif %}
+                <div class="form">
+                    <!-- Campos de entrada -->
+                    <div class="inputBox">
+                        {{ form.username.label_tag }}
+                        {{ form.username }}
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        {{ form.email.label_tag }}
+                        {{ form.email }}
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        {{ form.password1.label_tag }}
+                        {{ form.password1 }}
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        {{ form.password2.label_tag }}
+                        {{ form.password2 }}
+                        <i></i>
+                    </div>
+                    
+                    <!-- Links e botão -->
+                    <div class="links">
+                        <a href="#" onclick="redirectToLogin(); return false;">Já possui uma conta? Login</a>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "{% url 'login' %}";
+        }
+    </script>
+</body>
+</html>

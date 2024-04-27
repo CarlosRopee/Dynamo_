@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "stripe": "^14.8.0"
+  }
+}

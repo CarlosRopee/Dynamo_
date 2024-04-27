@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso!</title>
+    <style>
+        body {
+            font-family: Impact, fantasy;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #000;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(to top, #FF00FF 1%, #000 15%);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        header img {
+            max-height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            font-weight: normal;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            background: #fff;
+            width: 80%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            margin-top: 70px;
+            padding: 40px;
+            border-radius: 10px;
+            color: #000;
+            box-shadow: 0 0 10px rgba(140, 0, 140, 10);
+            font-size: 20px;
+        }
+
+        .container i {
+            margin: 0 10px; /* Adiciona um espaço entre o ícone e o texto */
+            font-size: 100px; /* Ajuste o tamanho do ícone conforme necessário */
+            margin-bottom: 30px;
+            color: #8A2BE2;
+            font-family: 'Font Awesome', sans-serif; /* Substitua 'Font Awesome' pela fonte desejada */
+            font-weight: 900; /* Ajuste o peso da fonte conforme necessário */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .second-container {
+            background: #fff;
+            width: 80%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 10px;
+            color: #000;
+            box-shadow: 0 0 10px rgba(140, 0, 140, 10);
+            font-size: 20px;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #000, #111 5%);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 97%;
+            margin-top: auto;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/menu">
+                <div class="header">
+                    <img src="{% static 'imagem/logo.png' %}" alt="Descrição da Imagem">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>{% if user.is_authenticated %}
+             <!-- Adiciona o ícone de check -->
+            <p style="margin-left: 10px;">Obrigado pela compra,  {{ user.username }}!</p>
+        {% endif %}</h1>
+        <i>&#10004;</i>
+        <p>Agradecemos por escolher nossos produtos. Se precisar de alguma assistência, entre em contato conosco.</p>
+
+        <!-- Link "Ver Minhas Compras" -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/minhas-compras">Ver Minhas Compras</a>
+        </div>
+    </div>
+
+    <!-- Novo container -->
+    <div class="second-container">
+        <p>Que tal explorar mais produtos em nosso catálogo?</p>
+        <a href="/menu">Ir para o Menu</a>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <p>Email: rios.vieira08170@gmail.com</p>
+                <p>Telefone: (61)99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Todos os direitos reservados.</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/pythonbrasil/">Facebook</a></li>
+                    <li><a href="https://twitter.com/css">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/javascript.js/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Localização</h3>
+                <p>Maldivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Adicione aqui seus scripts JavaScript, se necessário
+    </script>
+</body>
+</html>

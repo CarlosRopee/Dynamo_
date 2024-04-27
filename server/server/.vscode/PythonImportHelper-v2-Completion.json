@@ -1,0 +1,1418 @@
+[
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ProdutoAdmin",
+        "kind": 6,
+        "importPath": "server.server.server.server.server.admin",
+        "description": "server.server.server.server.server.admin",
+        "peekOfCode": "class ProdutoAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'preco', 'estoque', 'descricao')  # Adicione outros campos se necessário\n    search_fields = ['nome', 'descricao']  # Adicione funcionalidade de busca\n    list_filter = ('nome',)  # Filtros para facilitar a navegação\n# Registre o modelo Produto com a configuração ProdutoAdmin\nadmin.site.register(Produto, ProdutoAdmin)\n# Registre o modelo SuperUsuario, se necessário\nadmin.site.register(SuperUsuario)",
+        "detail": "server.server.server.server.server.admin",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.asgi",
+        "description": "server.server.server.server.server.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "server.server.server.server.server.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "SuperUsuario",
+        "kind": 6,
+        "importPath": "server.server.server.server.server.models",
+        "description": "server.server.server.server.server.models",
+        "peekOfCode": "class SuperUsuario(AbstractUser):\n    # Aqui você pode adicionar campos adicionais, se necessário\n    pass\n# Modelo de Produto\nclass Produto(models.Model):\n    nome = models.CharField(max_length=255)\n    preco = models.DecimalField(max_digits=10, decimal_places=2)\n    descricao = models.TextField()\n    imagem = models.ImageField(upload_to='imagens_produtos/')\n    # Se você quer rastrear o estoque, pode adicionar um campo de estoque",
+        "detail": "server.server.server.server.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Produto",
+        "kind": 6,
+        "importPath": "server.server.server.server.server.models",
+        "description": "server.server.server.server.server.models",
+        "peekOfCode": "class Produto(models.Model):\n    nome = models.CharField(max_length=255)\n    preco = models.DecimalField(max_digits=10, decimal_places=2)\n    descricao = models.TextField()\n    imagem = models.ImageField(upload_to='imagens_produtos/')\n    # Se você quer rastrear o estoque, pode adicionar um campo de estoque\n    estoque = models.IntegerField(default=0)\n    def __str__(self):\n        return self.nome",
+        "detail": "server.server.server.server.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n]",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"server.urls\"",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "ROOT_URLCONF = \"server.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"server.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.settings",
+        "description": "server.server.server.server.server.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.urls",
+        "description": "server.server.server.server.server.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('login/', views.login_view, name='login'),\n    path('menu/', views.menu_views, name='menu'),\n    path('cadastro/', views.cadastro, name='cadastro'),  # Adicione esta linha para a rota de cadastro\n    path('', views.home, name='home'),\n]",
+        "detail": "server.server.server.server.server.urls",
+        "documentation": {}
+    },
+    {
+        "label": "lista_produtos",
+        "kind": 2,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "def lista_produtos(request):\n    produtos = Produto.objects.all()  # Obtém todos os produtos\n    return render(request, 'menu.html', {'produtos': produtos})\ndef home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "menu_views",
+        "kind": 2,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "def menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')\n    else:\n        form = UserCreationForm()",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "cadastro",
+        "kind": 2,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "def cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')\n    else:\n        form = UserCreationForm()\n    return render(request, 'cadastro.html', {'form': form})\nfrom django.shortcuts import render, redirect",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "def login_view(request):\n    logger.info(User.objects.all())\n    if request.user.is_authenticated:\n        return redirect('menu')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.views",
+        "description": "server.server.server.server.server.views",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef login_view(request):\n    logger.info(User.objects.all())\n    if request.user.is_authenticated:\n        return redirect('menu')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:",
+        "detail": "server.server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.server.server.server.wsgi",
+        "description": "server.server.server.server.server.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "server.server.server.server.server.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "ProdutoAdmin",
+        "kind": 6,
+        "importPath": "server.server.server.server.admin",
+        "description": "server.server.server.server.admin",
+        "peekOfCode": "class ProdutoAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'preco', 'estoque', 'descricao')  # Adicione outros campos se necessário\n    search_fields = ['nome', 'descricao']  # Adicione funcionalidade de busca\n    list_filter = ('nome',)  # Filtros para facilitar a navegação\n# Registre o modelo Produto com a configuração ProdutoAdmin\nadmin.site.register(Produto, ProdutoAdmin)\n# Registre o modelo SuperUsuario, se necessário\nadmin.site.register(SuperUsuario)",
+        "detail": "server.server.server.server.admin",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.server.server.asgi",
+        "description": "server.server.server.server.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "server.server.server.server.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "server.server.server.server.manage",
+        "description": "server.server.server.server.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"server.settings\")\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "server.server.server.server.manage",
+        "documentation": {}
+    },
+    {
+        "label": "SuperUsuario",
+        "kind": 6,
+        "importPath": "server.server.server.server.models",
+        "description": "server.server.server.server.models",
+        "peekOfCode": "class SuperUsuario(AbstractUser):\n    # Aqui você pode adicionar campos adicionais, se necessário\n    pass\n# Modelo de Produto\nclass Produto(models.Model):\n    nome = models.CharField(max_length=255)\n    preco = models.DecimalField(max_digits=10, decimal_places=2)\n    descricao = models.TextField()\n    imagem = models.ImageField(upload_to='imagens_produtos/')\n    # Se você quer rastrear o estoque, pode adicionar um campo de estoque",
+        "detail": "server.server.server.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "Produto",
+        "kind": 6,
+        "importPath": "server.server.server.server.models",
+        "description": "server.server.server.server.models",
+        "peekOfCode": "class Produto(models.Model):\n    nome = models.CharField(max_length=255)\n    preco = models.DecimalField(max_digits=10, decimal_places=2)\n    descricao = models.TextField()\n    imagem = models.ImageField(upload_to='imagens_produtos/')\n    # Se você quer rastrear o estoque, pode adicionar um campo de estoque\n    estoque = models.IntegerField(default=0)\n    def __str__(self):\n        return self.nome",
+        "detail": "server.server.server.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n]",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"server.urls\"",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "ROOT_URLCONF = \"server.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"server.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "server.server.server.server.settings",
+        "description": "server.server.server.server.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'server.SuperUsuario'",
+        "detail": "server.server.server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.server.server.server.urls",
+        "description": "server.server.server.server.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('login/', views.login_view, name='login'),\n    path('menu/', views.menu_views, name='menu'),\n    path('cadastro/', views.cadastro, name='cadastro'),  # Adicione esta linha para a rota de cadastro\n    path('', views.home, name='home'),\n]",
+        "detail": "server.server.server.server.urls",
+        "documentation": {}
+    },
+    {
+        "label": "lista_produtos",
+        "kind": 2,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "def lista_produtos(request):\n    produtos = Produto.objects.all()  # Obtém todos os produtos\n    return render(request, 'menu.html', {'produtos': produtos})\ndef home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "menu_views",
+        "kind": 2,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "def menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')\n    else:\n        form = UserCreationForm()",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "cadastro",
+        "kind": 2,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "def cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('menu')\n    else:\n        form = UserCreationForm()\n    return render(request, 'cadastro.html', {'form': form})\nfrom django.shortcuts import render, redirect",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "def login_view(request):\n    logger.info(User.objects.all())\n    if request.user.is_authenticated:\n        return redirect('menu')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "server.server.server.server.views",
+        "description": "server.server.server.server.views",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef login_view(request):\n    logger.info(User.objects.all())\n    if request.user.is_authenticated:\n        return redirect('menu')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:",
+        "detail": "server.server.server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.server.server.wsgi",
+        "description": "server.server.server.server.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "server.server.server.server.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "server.server.server.manage",
+        "description": "server.server.server.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"server.settings\")\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "server.server.server.manage",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.asgi",
+        "description": "server.server.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "server.server.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Produto",
+        "kind": 6,
+        "importPath": "server.server.models",
+        "description": "server.server.models",
+        "peekOfCode": "class Produto(models.Model):\n    nome = models.CharField(max_length=100)\n    descricao = models.TextField()\n    preco = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "server.server.models",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-rjrg!k!un2e&y2nuex#gmq@i-+u@u+vs7ktng%le=hlpu7@2xe\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    'widget_tweaks',\n    'server',\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"server.urls\"",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "ROOT_URLCONF = \"server.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"server.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "server.server.settings",
+        "description": "server.server.settings",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]",
+        "detail": "server.server.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.server.urls",
+        "description": "server.server.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', home, name='home'),\n    path('menu/', views.menu_views, name='menu'),\n    path('login/', views.login_view, name='login'),\n    path('cadastro/', views.cadastro, name='cadastro'),  # Adicione esta linha para a rota de cadastro\n    path('lista_produtos/', lista_produtos, name='lista_produtos'),\n    path('item1/', views.item1_view, name='item1'), \n    path('item2/', views.item2_view, name='item2'),\n    path('item3/', views.item3_view, name='item3'),\n    path('item4/', views.item4_view, name='item4'),",
+        "detail": "server.server.urls",
+        "documentation": {}
+    },
+    {
+        "label": "lista_produtos",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def lista_produtos(request):\n    produtos = Produto.objects.all()\n    return render(request, 'menu.html', {'produtos': produtos})\ndef home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login')",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "menu_views",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def menu_views(request):\n    return render(request, 'menu.html')  # Supondo que você tem um template 'home.html'\ndef cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login')\n    else:\n        form = UserCreationForm()",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "cadastro",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def cadastro(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login')\n    else:\n        form = UserCreationForm()\n    return render(request, 'cadastro.html', {'form': form})\nfrom django.shortcuts import render, redirect",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        form = AuthenticationForm(request, request.POST)\n        if form.is_valid():\n            user = form.get_user()\n            login(request, user)\n            return redirect('menu')\n        else:\n            messages.error(request, \"Usuário ou senha incorretos.\")\n    return render(request, 'login.html')",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "item1_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def item1_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item1.html') \ndef item2_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item2.html') \ndef item3_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item3.html') \ndef item4_view(request):",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "item2_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def item2_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item2.html') \ndef item3_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item3.html') \ndef item4_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item4.html') \ndef item5_view(request):",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "item3_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def item3_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item3.html') \ndef item4_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item4.html') \ndef item5_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item5.html')",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "item4_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def item4_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item4.html') \ndef item5_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item5.html')",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "item5_view",
+        "kind": 2,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "def item5_view(request):\n    # Sua lógica de visualização aqui\n    return render(request, 'item5.html')",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "server.server.views",
+        "description": "server.server.views",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef login_view(request):\n    if request.method == 'POST':\n        form = AuthenticationForm(request, request.POST)\n        if form.is_valid():\n            user = form.get_user()\n            login(request, user)\n            return redirect('menu')\n        else:\n            messages.error(request, \"Usuário ou senha incorretos.\")",
+        "detail": "server.server.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "server.server.wsgi",
+        "description": "server.server.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "server.server.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "server.manage",
+        "description": "server.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"server.settings\")\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "server.manage",
+        "documentation": {}
+    }
+]
